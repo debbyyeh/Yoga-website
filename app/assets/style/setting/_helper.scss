@@ -1,0 +1,10 @@
+@mixin word($fz, $lh) {
+    font-size: $fz;
+    line-height: $lh;
+}
+@mixin word-hidden {
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}

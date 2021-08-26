@@ -1,0 +1,12 @@
+// bg-color
+.hover-bg {
+    &:hover {
+        background-color: #c0a4a5;
+    }
+}
+.a-bottomlink {
+    border-bottom: 1px solid transparent;
+    &:hover {
+        border-bottom: 1px solid $primary;
+    }
+}

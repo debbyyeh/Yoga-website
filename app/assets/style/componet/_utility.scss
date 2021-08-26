@@ -1,0 +1,89 @@
+// 字型
+.title-l {
+    font-size: 36px;
+    line-height: 54px;
+}
+.title-x {
+    font-size: 28px;
+    line-height: 42px;
+}
+.title-s {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.title {
+    font-size: 20px;
+    line-height: 30px;
+}
+.border-l {
+    border-radius: 16px;
+}
+.border-s {
+    border-radius: 4.8px;
+}
+.h-207 {
+    height: 207px;
+}
+.h-420 {
+    height: 420px;
+}
+.h-582 {
+    height: 582px;
+}
+.h-628 {
+    height: 628px;
+}
+.l-94 {
+    width: 94px;
+    height: 94px;
+}
+.bg-fluid {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+// star
+.star {
+    margin: 100px 100px;
+    position: relative;
+    display: block;
+    color: $secondary;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid $secondary;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+.star:before {
+    border-bottom: 80px solid $secondary;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: "";
+    transform: rotate(-35deg);
+}
+.star:after {
+    position: absolute;
+    display: block;
+    color: $secondary;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid $secondary;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: "";
+}
+
+// <i class="fab fa-facebook"></i>
+// <i class="fab fa-instagram"></i>
+// <i class="fab fa-line"></i>

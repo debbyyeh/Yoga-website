@@ -1,0 +1,33 @@
+body {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    h3 {
+        font-size: 28px;
+        line-height: 42px;
+        color: #907a7b;
+        font-weight: 700;
+    }
+    p {
+        color: $success;
+    }
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: $info;
+        &:hover {
+            filter: brightness(50%);
+        }
+    }
+    img {
+        display: block;
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+}
