@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    DOYOGA reservation
+  </title>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- icon -->
+  <link rel="shortcut icon" href="./assets/images/self_improvement_black_24dp.svg" type="image/x-icon">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- material icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header>
+    <div class="fluid bg-primary">
+      <div class="container d-flex align-items-center justify-content-between pt-8 pb-6">
+        <div>
+          <h1><a href="index.html">DOYOGA</a></h1>
+        </div>
+        <div class="d-none d-lg-block">
+          <ul class="d-flex">
+            <li><a href="" class="text-success a-bottomlink">課程介紹</a></li>
+            <li><a href="" class="mx-10 text-success a-bottomlink">瑜珈空間</a></li>
+            <li><a href="" class="text-success a-bottomlink">當月課表</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-flex">
+          <a class="btn btn-primary bg-transparent text-info border-info border-l hover-bg py-2 px-4"
+            href="reservation.html" role="button">立即預約</a>
+          <a class="btn btn-primary bg-transparent text-info border-info border-l ms-4 py-2 px-4" href="#"
+            role="button">聯絡我們</a>
+        </div>
+        <div class="d-lg-none">
+          <a href="#"><i class="fas fa-bars header-menu-btn text-info fa-2x"></i></a>
+          <ul class="header-show text-center">
+            <li class=" border-bottom border-info"><a href="course.html" class="title">課程介紹</a></li>
+            <li class="border-bottom border-info"><a href="environment.html" class="title">瑜珈空間</a></li>
+            <li class="border-bottom border-info"><a href="schedule.html" class="title">當月課表</a></li>
+            <li class="border-bottom border-info"><a href="reservation.html" class="title">立即預約</a></li>
+            <li class="border-bottom border-info"><a href="contact.html" class="title">聯絡我們</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="sticky-bar">
+      <ul class="px-4">
+        <li><a href="#" class="text-info mb-2"><i class="fab fa-facebook fa-2x"></i></a></li>
+        <li><a href="#" class="text-info mb-2"><i class="fab fa-instagram fa-2x"></i></a></li>
+        <li><a href="#" class="text-info"><i class="fab fa-line fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- choose plan -->
+<div class="reservation">
+    <div class="container pt-14">
+        <h3 class="text-center mb-4">立即預約</h3>
+        <div class="d-flex justify-content-center mb-10">
+            <a class="btn btn-info text-white border-l py-3 px-13" href="#" role="button">選擇方案</a>
+            <a class="btn btn-primary text-info border-l mx-9 py-3 px-13" href="#" role="button">填寫資料</a>
+            <a class="btn btn-primary text-info border-l py-3 px-13" href="#" role="button">完成預約</a>
+        </div>
+        <div class="row g-5">
+            <div class="col-4">
+                <div class="border card-border border-secondary">
+                    <div class="ratio ratio-4x3">
+                        <img src="./assets/images/plan1.jpg" alt="plan_pic" class="border-top-radius">
+                    </div>
+                    <div class="p-7">
+                        <p class="title mb-1 text-info text-center">首次體驗</p>
+                        <p class="title mb-2 text-secondary text-center">NT $450 / 次</p>
+                        <p class="text-info mb-12">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+                        <a href="#" class="reservation-btn btn btn-secondary w-100 text-white py-2"
+                            role="button">選擇課程</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="border card-border border-secondary">
+                    <div class="ratio ratio-4x3">
+                        <img src="./assets/images/plan2.jpg" alt="plan_pic" class="border-top-radius">
+                    </div>
+                    <div class="p-7">
+                        <p class="title mb-1 text-info text-center">短期體驗</p>
+                        <p class="title mb-2 text-secondary text-center">NT $1800 / 月</p>
+                        <p class="text-info mb-12">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+                        <a href="#" class="reservation-btn btn btn-secondary w-100 text-white py-2"
+                            role="button">選擇課程</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="border card-border border-secondary">
+                    <div class="ratio ratio-4x3">
+                        <img src="./assets/images/plan3.jpg" alt="plan_pic" class="border-top-radius">
+                    </div>
+                    <div class="p-7">
+                        <p class="title mb-1 text-info text-center">長期體驗</p>
+                        <p class="title mb-2 text-secondary text-center">NT $5600 / 季</p>
+                        <p class="text-info mb-12">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
+                        <a href="#" class="reservation-btn btn btn-secondary w-100 text-white py-2"
+                            role="button">選擇課程</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- plan level -->
+    <section>
+        <div class="container mb-12 reservation-show">
+            <div>
+                <span class="material-icons text-info pt-10 pb-10">
+                    arrow_drop_down
+                </span>
+            </div>
+            <div class="row fluid bg-info border-success pt-12 pb-14 px-12 text-white">
+                <h3 class="text-center text-white mb-10">選擇課程階級</h3>
+                <ul class="d-flex courses">
+                    <li class="col">
+                        <div class="courses_level bg-secondary border-l p-7">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="title-x fw-bolder mb-1 text-white">基礎 Basic</h3>
+                                <span class="material-icons text-white opacity">
+                                    check_circle_outline
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="title me-2">基礎課程</p>
+                                <span class="title-xs bg-info py-1 px-4 border-l">60 min</span>
+                            </div>
+                            <ul>
+                                <li class="mb-1">・入體位法動作解說</li>
+                                <li class="mb-1">・瑜珈基礎動作、順位</li>
+                                <li class="mb-1">・適合任何階段練習者</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col mx-6">
+                        <div class="courses_level bg-secondary border-l text-white p-7">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="title-x fw-bolder mb-1 text-white">中階 Intermediate</h3>
+                                <span class="material-icons text-white opacity">
+                                    check_circle_outline
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="title me-2">艾揚格、哈達、寰宇</p>
+                                <span class="title-xs bg-info py-1 px-4 border-l">60 min</span>
+                            </div>
+                            <ul>
+                                <li class="mb-1">・刺激身體七個層次為核心</li>
+                                <li class="mb-1">・結合流暢體位法練習、呼吸、觀想</li>
+                                <li class="mb-1">・適合半年以上練習者</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="courses_level bg-secondary border-l text-white p-7">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="title-x fw-bolder mb-1 text-white">高階 Advanced</h3>
+                                <span class="material-icons text-white opacity">
+                                    check_circle_outline
+                                </span>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <p class="title me-2">阿斯坦加、陰陽</p>
+                                <span class="title-xs bg-info py-1 px-4 border-l">60 min</span>
+                            </div>
+                            <ul>
+                                <li class="mb-1">・充分打開身體每個部位</li>
+                                <li class="mb-1">・顯著提升力量與柔軟度</li>
+                                <li class="mb-1">・適合一年以上練習者</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- notes -->
+    <div class="container text-info w-25 pb-104 pt-12">
+        <p class="mb-1 text-center">您選擇的是</p>
+        <p class="mb-12 title text-center border-bottom border-info">首次體驗課程-基礎</p>
+        <h3 class="title-x mb-4 text-center">預約須知</h3>
+        <ol class="pb-10">
+            <li class="mb-1">1. 如果有特殊體質、特殊狀況，請主動告知。</li>
+            <li class="mb-1">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
+            <li class="mb-1">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
+            <li>4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
+        </ol>
+        <a href="Info.html" class="btn btn-secondary w-100 text-white py-2" role="button">繼續預約</a>
+    </div>
+</div>
+
+    <footer class="footer">
+      <div class="fluid bg-info border-bottom border-white py-md-10 py-7">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row justify-content-between text-white">
+            <h3 class="text-white mb-md-0 mb-2 d-none d-md-block">現在訂閱，獲得課程優惠碼！</h3>
+            <h3 class="text-white title-s mb-md-0 mb-2 d-md-none">現在訂閱，獲得課程優惠碼！</h3>
+            <div class="input-group">
+              <input type="email" class="form-control border-secondary col-md-4" placeholder="輸入您的電子信箱">
+              <button class="btn btn-secondary py-2 text-white" type="button">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fluid bg-info py-md-10 py-7">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <div>
+              <h1><a href="index.html">DOYOGA</a></h1>
+              <ul>
+                <li><a href="" class="mb-2 text-white">課程介紹</a></li>
+                <li><a href="" class="mb-2 text-white">瑜珈空間</a></li>
+                <li><a href="" class="mb-2 mb-md-0 text-white">當月課表</a></li>
+              </ul>
+            </div>
+            <div class="align-self-end d-none d-md-block">
+              <p class="text-white ">© 2021. All Rights Reserved.</p>
+            </div>
+            <div>
+              <ul class="d-flex">
+                <li><a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li><a href="#" class="text-white px-2"><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li><a href="#" class="text-white"><i class="fab fa-line fa-2x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-white d-md-none">© 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- bootstrap -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"></script> -->
+    <!-- swiper -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {});
+    </script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
