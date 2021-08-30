@@ -75,13 +75,14 @@
     <div class="container pt-14">
         <h3 class="text-center mb-4">立即預約</h3>
         <div class="d-flex justify-content-center mb-10">
-            <a class="btn btn-info text-white border-l py-3 px-13" href="#" role="button">選擇方案</a>
-            <a class="btn btn-primary text-info border-l mx-9 py-3 px-13" href="#" role="button">填寫資料</a>
-            <a class="btn btn-primary text-info border-l py-3 px-13" href="#" role="button">完成預約</a>
+            <div class="bg-info text-white border-l py-3 px-13">選擇方案</div>
+            <div class="bg-primary text-info border-l mx-9 py-3 px-13">填寫資料</div>
+            <div class="bg-primary text-info border-l py-3 px-13">完成預約</div>
         </div>
-        <div class="row g-5">
-            <div class="col-4">
-                <div class="border card-border border-secondary">
+        <div class="row flex-column flex-lg-row">
+            <div class="col-lg-4 col-12 mb-lg-0 mb-md-7 mb-4">
+                <div
+                    class="card-border d-flex flex-column flex-md-row flex-lg-column align-items-md-center border border-secondary">
                     <div class="ratio ratio-4x3">
                         <img src="./assets/images/plan1.jpg" alt="plan_pic" class="border-top-radius">
                     </div>
@@ -94,8 +95,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="border card-border border-secondary">
+            <div class="col-lg-4 col-12 mb-lg-0 mb-md-7 mb-4">
+                <div
+                    class="card-border d-flex flex-column flex-md-row flex-lg-column align-items-md-center border border-secondary">
                     <div class="ratio ratio-4x3">
                         <img src="./assets/images/plan2.jpg" alt="plan_pic" class="border-top-radius">
                     </div>
@@ -108,8 +110,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="border card-border border-secondary">
+            <div class="col-lg-4 col-12 mb-lg-0 mb-md-7 mb-4">
+                <div
+                    class="card-border d-flex flex-column flex-md-row flex-lg-column align-items-md-center border border-secondary">
                     <div class="ratio ratio-4x3">
                         <img src="./assets/images/plan3.jpg" alt="plan_pic" class="border-top-radius">
                     </div>
@@ -217,9 +220,11 @@
           <div class="d-flex flex-column flex-md-row justify-content-between text-white">
             <h3 class="text-white mb-md-0 mb-2 d-none d-md-block">現在訂閱，獲得課程優惠碼！</h3>
             <h3 class="text-white title-s mb-md-0 mb-2 d-md-none">現在訂閱，獲得課程優惠碼！</h3>
-            <div class="input-group">
-              <input type="email" class="form-control border-secondary col-md-4" placeholder="輸入您的電子信箱">
-              <button class="btn btn-secondary py-2 text-white" type="button">訂閱</button>
+            <div class="row">
+              <div class="input-group col-4">
+                <input type="email" class="form-control border-secondary col-md-4" placeholder="輸入您的電子信箱">
+                <button class="btn btn-secondary py-2 text-white" type="button">訂閱</button>
+              </div>
             </div>
           </div>
         </div>
@@ -260,7 +265,17 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {});
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

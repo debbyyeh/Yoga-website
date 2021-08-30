@@ -7767,6 +7767,10 @@ fieldset:disabled .btn {
   --bs-aspect-ratio: calc(3 / 4 * 100%);
 }
 
+.ratio-2x1 {
+  --bs-aspect-ratio: calc(1 / 2 * 100%);
+}
+
 .ratio-3x4 {
   --bs-aspect-ratio: calc(4 / 3 * 100%);
 }
@@ -15042,9 +15046,30 @@ body .form-info input {
   color: #907a7b;
 }
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .card-border {
   background-color: #fff;
   border-radius: 16px;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header h1 a, header .h1 a {
@@ -15135,10 +15160,6 @@ footer h1 a, footer .h1 a {
   width: 150px;
 }
 
-.pb-104 {
-  padding-bottom: 104px;
-}
-
 .h-150 {
   height: 150px;
 }
@@ -15153,6 +15174,10 @@ footer h1 a, footer .h1 a {
 
 .h-420 {
   height: 420px;
+}
+
+.h-444 {
+  height: 444px;
 }
 
 .h-497 {

@@ -200,9 +200,11 @@
           <div class="d-flex flex-column flex-md-row justify-content-between text-white">
             <h3 class="text-white mb-md-0 mb-2 d-none d-md-block">現在訂閱，獲得課程優惠碼！</h3>
             <h3 class="text-white title-s mb-md-0 mb-2 d-md-none">現在訂閱，獲得課程優惠碼！</h3>
-            <div class="input-group">
-              <input type="email" class="form-control border-secondary col-md-4" placeholder="輸入您的電子信箱">
-              <button class="btn btn-secondary py-2 text-white" type="button">訂閱</button>
+            <div class="row">
+              <div class="input-group col-4">
+                <input type="email" class="form-control border-secondary col-md-4" placeholder="輸入您的電子信箱">
+                <button class="btn btn-secondary py-2 text-white" type="button">訂閱</button>
+              </div>
             </div>
           </div>
         </div>
@@ -243,7 +245,17 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {});
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
