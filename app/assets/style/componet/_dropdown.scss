@@ -1,0 +1,45 @@
+// dropdown
+// header
+.header-show {
+    max-height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: max-height 1.1s;
+    z-index: 999;
+}
+.header-height-show {
+    .header-show {
+        max-height: 100vh;
+    }
+}
+// 預約課程
+.reservation-show {
+    max-height: 0;
+    overflow: hidden;
+    // 滿版
+    right: 0;
+    left: 0;
+    transition: max-height 1.1s;
+}
+.reservation-height-show {
+    .reservation-show {
+        max-height: 800px;
+    }
+}
+// 訂單完成
+.order-show {
+    max-height: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    transition: max-height 1.1s;
+}
+.order-height-show {
+    .order-show {
+        max-height: 800px;
+    }
+}

@@ -1,3 +1,44 @@
+.card-border {
+    background-color: $white;
+    border-radius: 16px;
+}
+header {
+    h1 {
+        a {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+            background-image: url(../images/DOYOGA-logo.png);
+            height: 30px;
+            width: 96px;
+        }
+    }
+}
+footer {
+    h1 {
+        a {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+            background-image: url(../images/DOYOGA.png);
+            height: 30px;
+            width: 96px;
+        }
+    }
+}
+
+.overflow-x {
+    overflow-x: scroll;
+}
+.opacity {
+    opacity: 0.2;
+}
 // 字型
 .title-l {
     font-size: 36px;
@@ -16,17 +57,48 @@
     font-size: 20px;
     line-height: 30px;
 }
+.title-xs {
+    font-size: 14px;
+    line-height: 21px;
+}
 .border-l {
     border-radius: 16px;
+}
+.border-top-radius {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    @media (max-width: 992px) {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 16px;
+    }
+    @include X-mobile {
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0px;
+    }
 }
 .border-s {
     border-radius: 4.8px;
 }
+.w-150 {
+    width: 150px;
+}
+.pb-104 {
+    padding-bottom: 104px;
+}
+.h-150 {
+    height: 150px;
+}
 .h-207 {
     height: 207px;
 }
+.h-300 {
+    height: 300px;
+}
 .h-420 {
     height: 420px;
+}
+.h-497 {
+    height: 497px;
 }
 .h-582 {
     height: 582px;
@@ -38,52 +110,68 @@
     width: 94px;
     height: 94px;
 }
+.l-68 {
+    width: 68px;
+    height: 68px;
+}
 .bg-fluid {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
-// star
-.star {
-    margin: 100px 100px;
-    position: relative;
-    display: block;
-    color: $secondary;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid $secondary;
-    border-left: 100px solid transparent;
-    transform: rotate(35deg);
-}
-.star:before {
-    border-bottom: 80px solid $secondary;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -45px;
-    left: -65px;
-    display: block;
-    content: "";
-    transform: rotate(-35deg);
-}
-.star:after {
-    position: absolute;
-    display: block;
-    color: $secondary;
-    top: 3px;
-    left: -105px;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid $secondary;
-    border-left: 100px solid transparent;
-    transform: rotate(-70deg);
-    content: "";
-}
 
+.sticky-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    @include Ipad {
+        display: none;
+    }
+}
+.layout {
+    &-sign {
+        padding-top: 64px;
+        padding-bottom: 104px;
+        @include Ipad {
+            padding-bottom: 80px;
+        }
+        @include mobile {
+            padding-top: 48px;
+            padding-bottom: 88px;
+        }
+    }
+    &-index {
+        padding-top: 40px;
+        padding-bottom: 64px;
+        @include Ipad {
+            padding-bottom: 56px;
+        }
+        @include X-mobile {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+    }
+    &-contact {
+        padding-top: 64px;
+        padding-bottom: 110px;
+        @include Ipad {
+            padding-bottom: 80px;
+        }
+        @include X-mobile {
+            padding-top: 48px;
+            padding-bottom: 88px;
+        }
+    }
+}
+.position-50 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+}
 // <i class="fab fa-facebook"></i>
 // <i class="fab fa-instagram"></i>
 // <i class="fab fa-line"></i>

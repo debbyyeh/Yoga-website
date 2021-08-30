@@ -1,0 +1,50 @@
+---
+title: DOYOGA contact
+layout: ./app/layout.ejs
+engine: ejs
+current: contact
+---
+<div class="container layout-contact">
+    <h3>聯絡我們</h3>
+    <div class="row text-info flex-column flex-lg-row">
+        <div class="col-lg-7 col-12">
+            <div class="ratio ratio-1x1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67795.10637148625!2d121.44198807341135!3d25.038578799842604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97e33ed7a5b%3A0x495c3ea3b3524f32!2z6I-x57SL6JSs6aaZ5ZKW5ZWh6aSo!5e0!3m2!1szh-TW!2stw!4v1630248368205!5m2!1szh-TW!2stw"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-9 col-12 mt-7 mb-lg-0 mb-12">
+                <h4 class="mb-2 title-s">DOYOGA 教室位置</h4>
+                <p class="mb-2">高雄市苓雅區北信街 23 號 2 樓</p>
+                <p>如何前往：</p>
+                <ol>
+                    <li class="mb-7">1. 搭乘捷運：紅線到正義站 3 號出口，延正義路方向至北信街交叉口即可。</li>
+                    <li class="mb-7">2. 搭乘公車：搭這些公車都可以抵達正義站 24B 25 33 50 76 77 77區 100</li>
+                    <li>3. 開車前往北信街 32 號，教室旁有專屬停車場可以使用。</li>
+                </ol>
+            </div>
+        </div>
+        <div class="col-lg-5 col-12 bg-primary border-l p-10">
+            <h4 class="title mb-7">意見回饋&問題詢問</h4>
+            <form>
+                <div class="form-group d-flex flex-column mb-4">
+                    <label for="name" class="mb-2">姓名</label>
+                    <input type="text" id="name" placeholder="請輸入您的姓名" class="py-2 px-3 rounded">
+                </div>
+                <div class="form-group d-flex flex-column mb-4">
+                    <label for="email" class="mb-2">電子信箱</label>
+                    <input type="email" id="email" placeholder="email@example.com" class="py-2 px-3 rounded">
+                </div>
+                <div class="form-group d-flex flex-column mb-4">
+                    <label for="tel" class="mb-2">手機號碼</label>
+                    <input type="tel" id="tel" placeholder="0912-345-678" class="py-2 px-3 rounded">
+                </div>
+                <div class="form-group d-flex flex-column mb-4">
+                    <label for="comment" class="mb-2">意見回饋</label>
+                    <textarea name="" id="" cols="30" rows="10" class="rounded"></textarea>
+                </div>
+                <input class="btn btn-secondary text-white text-right" type="submit" value="送出">
+            </form>
+        </div>
+    </div>
+</div>

@@ -10,10 +10,6 @@ body {
         font-size: 28px;
         line-height: 42px;
         color: #907a7b;
-        font-weight: 700;
-    }
-    p {
-        color: $success;
     }
     a {
         display: inline-block;
@@ -28,6 +24,18 @@ body {
         object-fit: cover;
         max-width: 100%;
         height: auto;
-        border-radius: 16px;
+    }
+    .form-content {
+        color: $success;
+    }
+    input {
+        outline: none;
+        border: 1px solid $secondary;
+    }
+    .form-info {
+        label,
+        input {
+            color: $info;
+        }
     }
 }

@@ -10,3 +10,29 @@
         border-bottom: 1px solid $primary;
     }
 }
+.header-show {
+    li {
+        background-color: $primary;
+        a {
+            color: $info;
+            padding: 16px 0px;
+            &:hover {
+                color: $success;
+            }
+        }
+        &:hover {
+            background-color: $secondary;
+        }
+    }
+}
+.courses_level {
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+.courses_level:hover,
+.courses_level.active {
+    border: 3px solid $white;
+    span {
+        opacity: 1;
+    }
+}
