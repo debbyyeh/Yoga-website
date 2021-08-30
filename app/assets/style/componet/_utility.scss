@@ -1,6 +1,19 @@
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-border {
     background-color: $white;
     border-radius: 16px;
+}
+.object-cover {
+    object-fit: cover;
 }
 header {
     h1 {
@@ -82,9 +95,6 @@ footer {
 .w-150 {
     width: 150px;
 }
-.pb-104 {
-    padding-bottom: 104px;
-}
 .h-150 {
     height: 150px;
 }
@@ -96,6 +106,9 @@ footer {
 }
 .h-420 {
     height: 420px;
+}
+.h-444 {
+    height: 444px;
 }
 .h-497 {
     height: 497px;
