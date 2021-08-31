@@ -15,8 +15,9 @@ body {
         display: inline-block;
         text-decoration: none;
         color: $info;
+        // transition: all 0.8s;
         &:hover {
-            filter: brightness(50%);
+            filter: brightness(80%);
         }
     }
     img {
@@ -30,12 +31,7 @@ body {
     }
     input {
         outline: none;
-        border: 1px solid $secondary;
-    }
-    .form-info {
-        label,
-        input {
-            color: $info;
-        }
+        //     -webkit-appearance: none; /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+        //     -moz-appearance: none; /* FireFox */
     }
 }

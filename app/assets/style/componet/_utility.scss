@@ -45,17 +45,24 @@ footer {
         }
     }
 }
-
 .overflow-x {
     overflow-x: scroll;
 }
 .opacity {
     opacity: 0.2;
 }
+.bg-opacity {
+    background: $info;
+    opacity: 0.5;
+}
 // 字型
 .title-l {
     font-size: 36px;
     line-height: 54px;
+    @include X-mobile {
+        font-size: 28px;
+        line-height: 42px;
+    }
 }
 .title-x {
     font-size: 28px;
@@ -65,7 +72,14 @@ footer {
     font-size: 24px;
     line-height: 36px;
 }
-
+.title-s-mobile {
+    font-size: 24px;
+    line-height: 36px;
+    @include X-mobile {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
 .title {
     font-size: 20px;
     line-height: 30px;
@@ -104,9 +118,6 @@ footer {
 .h-300 {
     height: 300px;
 }
-.h-420 {
-    height: 420px;
-}
 .h-444 {
     height: 444px;
 }
@@ -133,6 +144,12 @@ footer {
     background-size: cover;
 }
 
+.fluid-md {
+    @include Ipad {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
 .sticky-bar {
     position: fixed;
     top: 50%;
@@ -144,46 +161,71 @@ footer {
         display: none;
     }
 }
-.layout {
-    &-sign {
-        padding-top: 64px;
-        padding-bottom: 104px;
-        @include Ipad {
-            padding-bottom: 80px;
-        }
-        @include mobile {
-            padding-top: 48px;
-            padding-bottom: 88px;
-        }
-    }
-    &-index {
-        padding-top: 40px;
-        padding-bottom: 64px;
-        @include Ipad {
-            padding-bottom: 56px;
-        }
-        @include X-mobile {
-            padding-top: 48px;
-            padding-bottom: 48px;
-        }
-    }
-    &-contact {
-        padding-top: 64px;
-        padding-bottom: 110px;
-        @include Ipad {
-            padding-bottom: 80px;
-        }
-        @include X-mobile {
-            padding-top: 48px;
-            padding-bottom: 88px;
-        }
-    }
-}
 .position-50 {
     position: absolute;
     top: 100%;
     left: 0;
     transform: translateY(-100%);
+}
+.position-120 {
+    position: absolute;
+    top: 120%;
+    transform: translateY(-120%);
+}
+.form-group {
+    input,
+    select {
+        border-radius: 4px;
+        border: 1px solid $secondary;
+        padding: 6px 12px;
+    }
+    ::-webkit-input-placeholder {
+        color: $secondary;
+    }
+}
+.form-group-info {
+    label {
+        color: $secondary;
+    }
+}
+.radio-sex {
+    display: inline-block;
+    position: relative;
+    margin-right: 32px;
+    input {
+        vertical-align: middle;
+        margin-top: -2px;
+        margin-bottom: 1px;
+        width: 16px;
+        height: 16px;
+        outline: none;
+        appearance: none;
+        opacity: 0;
+    }
+    label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 16px;
+        height: 16px;
+        border: 1px solid $secondary;
+        border-radius: 50%;
+    }
+}
+.radio-sex input :checked + label {
+    background-color: $secondary;
+    ::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        left: 8px;
+        top: 2px;
+        border: 1px solid $secondary;
+        border-radius: 50%;
+        background-color: #fff;
+    }
 }
 // <i class="fab fa-facebook"></i>
 // <i class="fab fa-instagram"></i>
