@@ -30,16 +30,16 @@
 
 <body>
   <header>
-    <div class="fluid bg-primary">
+    <div class="bg-primary">
       <div class="container d-flex align-items-center justify-content-between pt-8 pb-6">
         <div>
           <h1><a href="index.html">DOYOGA</a></h1>
         </div>
         <div class="d-none d-lg-block">
           <ul class="d-flex">
-            <li><a href="" class="text-success a-bottomlink">課程介紹</a></li>
-            <li><a href="" class="mx-10 text-success a-bottomlink">瑜珈空間</a></li>
-            <li><a href="" class="text-success a-bottomlink">當月課表</a></li>
+            <li><a href="courses.html" class="text-success a-bottomlink">課程介紹</a></li>
+            <li><a href="environment.html" class="mx-10 text-success a-bottomlink">瑜珈空間</a></li>
+            <li><a href="schedule.html" class="text-success a-bottomlink">當月課表</a></li>
           </ul>
         </div>
         <div class="d-none d-lg-flex">
@@ -51,7 +51,7 @@
         <div class="d-lg-none">
           <a href="#"><i class="fas fa-bars header-menu-btn text-info fa-2x"></i></a>
           <ul class="header-show text-center">
-            <li class=" border-bottom border-info"><a href="course.html" class="title">課程介紹</a></li>
+            <li class=" border-bottom border-info"><a href="courses.html" class="title">課程介紹</a></li>
             <li class="border-bottom border-info"><a href="environment.html" class="title">瑜珈空間</a></li>
             <li class="border-bottom border-info"><a href="schedule.html" class="title">當月課表</a></li>
             <li class="border-bottom border-info"><a href="reservation.html" class="title">立即預約</a></li>
@@ -71,18 +71,28 @@
     </div>
   </nav>
   <!-- choose plan -->
-<div class="reservation">
-    <div class="container pt-14">
-        <h3 class="text-center mb-4">立即預約</h3>
-        <div class="d-flex justify-content-center mb-10">
-            <div class="bg-info text-white border-l py-3 px-13">選擇方案</div>
-            <div class="bg-primary text-info border-l mx-9 py-3 px-13">填寫資料</div>
-            <div class="bg-primary text-info border-l py-3 px-13">完成預約</div>
+<div class="reservation layout-reservation">
+    <div class="container">
+        <h3 class="text-center title-x mb-4">立即預約</h3>
+        <div class="row mb-10 text-center">
+            <div class="mx-auto col-md-6 col-12">
+                <div class="row">
+                    <div class="col-4 bg-info border-l">
+                        <p class="text-white py-3">選擇方案</p>
+                    </div>
+                    <div class="col-4 bg-primary border-l">
+                        <p class="text-info py-3">填寫資料</p>
+                    </div>
+                    <div class="col-4 bg-primary border-l">
+                        <p class="text-info py-3">完成預約</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row flex-column flex-lg-row">
             <div class="col-lg-4 col-12 mb-lg-0 mb-md-7 mb-4">
                 <div
-                    class="card-border d-flex flex-column flex-md-row flex-lg-column align-items-md-center border border-secondary">
+                    class="card-border d-flex flex-column flex-md-row flex-lg-column align-items-md-center border border-secondary position-relative">
                     <div class="ratio ratio-4x3">
                         <img src="./assets/images/plan1.jpg" alt="plan_pic" class="border-top-radius">
                     </div>
@@ -93,6 +103,9 @@
                         <a href="#" class="reservation-btn btn btn-secondary w-100 text-white py-2"
                             role="button">選擇課程</a>
                     </div>
+                    <!-- <div class="position-120">
+                        <i class="fas fa-sort-down text-info fa-2x"></i>
+                    </div> -->
                 </div>
             </div>
             <div class="col-lg-4 col-12 mb-lg-0 mb-md-7 mb-4">
@@ -129,88 +142,107 @@
     </div>
     <!-- plan level -->
     <section>
-        <div class="container mb-12 reservation-show">
-            <div>
-                <span class="material-icons text-info pt-10 pb-10">
-                    arrow_drop_down
-                </span>
+        <div class="fluid-md">
+            <div class="reservation-show">
+                <div class="bg-info border-success text-white layout-planLevel container">
+                    <h3 class="text-center text-white mb-10">選擇課程階級</h3>
+                    <ul class="courses row flex-column flex-md-row flex-nowrap overflow-x">
+                        <li class="col-lg-4 col-md-6 col-12 mb-md-0 mb-7 level-btn-1">
+                            <div class="courses_level bg-secondary border-l p-7">
+                                <div class="d-flex justify-content-between align-items-center position-relative">
+                                    <h3 class="title-x fw-bolder mb-1 text-white">基礎 Basic</h3>
+                                    <span class="material-icons text-white opacity">
+                                        check_circle_outline
+                                    </span>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <p class="me-2">基礎課程</p>
+                                    <span class="title-xs bg-info py-1 px-4 border-l">60 min</span>
+                                </div>
+                                <ul>
+                                    <li class="mb-1">・入體位法動作解說</li>
+                                    <li class="mb-1">・瑜珈基礎動作、順位</li>
+                                    <li class="mb-1">・適合任何階段練習者</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-md-6 col-12 mb-md-0 mb-7 level-btn-2">
+                            <div class="courses_level bg-secondary border-l text-white p-7">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="title-x fw-bolder mb-1 text-white">中階 Intermediate</h3>
+                                    <span class="material-icons text-white opacity">
+                                        check_circle_outline
+                                    </span>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <p class="me-2">艾揚格、哈達、寰宇</p>
+                                    <span class="title-xs bg-info py-1 px-4 border-l">60 min</span>
+                                </div>
+                                <ul>
+                                    <li class="mb-1">・刺激身體七個層次為核心</li>
+                                    <li class="mb-1">・結合流暢體位法練習、呼吸、觀想</li>
+                                    <li class="mb-1">・適合半年以上練習者</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-md-6 col-12 mb-md-0 mb-7 level-btn-3">
+                            <div class="courses_level bg-secondary border-l text-white p-7">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="title-x fw-bolder mb-1 text-white">高階 Advanced</h3>
+                                    <span class="material-icons text-white opacity">
+                                        check_circle_outline
+                                    </span>
+                                </div>
+                                <div class="d-flex align-items-center mb-4">
+                                    <p class="me-2">阿斯坦加、陰陽</p>
+                                    <span class="title-xs bg-info py-1 px-4 border-l">60 min</span>
+                                </div>
+                                <ul>
+                                    <li class="mb-1">・充分打開身體每個部位</li>
+                                    <li class="mb-1">・顯著提升力量與柔軟度</li>
+                                    <li class="mb-1">・適合一年以上練習者</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="row fluid bg-info border-success pt-12 pb-14 px-12 text-white">
-                <h3 class="text-center text-white mb-10">選擇課程階級</h3>
-                <ul class="d-flex courses">
-                    <li class="col">
-                        <div class="courses_level bg-secondary border-l p-7">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h3 class="title-x fw-bolder mb-1 text-white">基礎 Basic</h3>
-                                <span class="material-icons text-white opacity">
-                                    check_circle_outline
-                                </span>
-                            </div>
-                            <div class="d-flex align-items-center mb-4">
-                                <p class="title me-2">基礎課程</p>
-                                <span class="title-xs bg-info py-1 px-4 border-l">60 min</span>
-                            </div>
-                            <ul>
-                                <li class="mb-1">・入體位法動作解說</li>
-                                <li class="mb-1">・瑜珈基礎動作、順位</li>
-                                <li class="mb-1">・適合任何階段練習者</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="col mx-6">
-                        <div class="courses_level bg-secondary border-l text-white p-7">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h3 class="title-x fw-bolder mb-1 text-white">中階 Intermediate</h3>
-                                <span class="material-icons text-white opacity">
-                                    check_circle_outline
-                                </span>
-                            </div>
-                            <div class="d-flex align-items-center mb-4">
-                                <p class="title me-2">艾揚格、哈達、寰宇</p>
-                                <span class="title-xs bg-info py-1 px-4 border-l">60 min</span>
-                            </div>
-                            <ul>
-                                <li class="mb-1">・刺激身體七個層次為核心</li>
-                                <li class="mb-1">・結合流暢體位法練習、呼吸、觀想</li>
-                                <li class="mb-1">・適合半年以上練習者</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="col">
-                        <div class="courses_level bg-secondary border-l text-white p-7">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h3 class="title-x fw-bolder mb-1 text-white">高階 Advanced</h3>
-                                <span class="material-icons text-white opacity">
-                                    check_circle_outline
-                                </span>
-                            </div>
-                            <div class="d-flex align-items-center mb-4">
-                                <p class="title me-2">阿斯坦加、陰陽</p>
-                                <span class="title-xs bg-info py-1 px-4 border-l">60 min</span>
-                            </div>
-                            <ul>
-                                <li class="mb-1">・充分打開身體每個部位</li>
-                                <li class="mb-1">・顯著提升力量與柔軟度</li>
-                                <li class="mb-1">・適合一年以上練習者</li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+        </div>
+        <div class="row text-info level-show-1 pt-12">
+            <div class="col-md-5 col-8 px-0 mx-auto">
+                <p class="mb-1 text-center">您選擇的是</p>
+                <p class="title text-center border-bottom border-info">首次體驗課程-基礎</p>
+            </div>
+        </div>
+        <div class="row text-info level-show-2">
+            <div class="col-md-5 col-8 mx-auto">
+                <p class="mb-1 text-center">您選擇的是</p>
+                <p class="title text-center border-bottom border-info">首次體驗課程-中階</p>
+            </div>
+        </div>
+        <div class="row text-info level-show-3">
+            <div class="col-md-5 col-8 mx-auto">
+                <p class="mb-1 text-center">您選擇的是</p>
+                <p class="title text-center border-bottom border-info">首次體驗課程-高階</p>
             </div>
         </div>
     </section>
     <!-- notes -->
-    <div class="container text-info w-25 pb-104 pt-12">
-        <p class="mb-1 text-center">您選擇的是</p>
-        <p class="mb-12 title text-center border-bottom border-info">首次體驗課程-基礎</p>
-        <h3 class="title-x mb-4 text-center">預約須知</h3>
-        <ol class="pb-10">
-            <li class="mb-1">1. 如果有特殊體質、特殊狀況，請主動告知。</li>
-            <li class="mb-1">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
-            <li class="mb-1">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
-            <li>4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
-        </ol>
-        <a href="Info.html" class="btn btn-secondary w-100 text-white py-2" role="button">繼續預約</a>
+    <div class="container text-info">
+        <div class="row pt-12">
+            <div class="col-lg-6 col-md-8 offset-lg-3 offset-md-2">
+                <h3 class="title-x mb-4 text-center">預約須知</h3>
+                <ol class="pb-10">
+                    <li class="mb-1">1. 如果有特殊體質、特殊狀況，請主動告知。</li>
+                    <li class="mb-1">2. 取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
+                    <li class="mb-1">3. 為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
+                    <li>4. DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
+                </ol>
+            </div>
+            <div class="col-md-4 c0l-12 mx-auto">
+                <a href="Info.html" class="btn btn-secondary w-100 text-white py-2" role="button">繼續預約</a>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -235,9 +267,9 @@
             <div>
               <h1><a href="index.html">DOYOGA</a></h1>
               <ul>
-                <li><a href="" class="mb-2 text-white">課程介紹</a></li>
-                <li><a href="" class="mb-2 text-white">瑜珈空間</a></li>
-                <li><a href="" class="mb-2 mb-md-0 text-white">當月課表</a></li>
+                <li><a href="courses.html" class="mb-2 text-white">課程介紹</a></li>
+                <li><a href="environment.html" class="mb-2 text-white">瑜珈空間</a></li>
+                <li><a href="schedule.html" class="mb-2 mb-md-0 text-white">當月課表</a></li>
               </ul>
             </div>
             <div class="align-self-end d-none d-md-block">
@@ -257,9 +289,12 @@
     </footer>
 
     <!-- bootstrap -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
     <!-- swiper -->
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
