@@ -1,5 +1,5 @@
 .layout {
-    &-info {
+    &-OrderStep {
         padding-top: 64px;
         padding-bottom: 104px;
         @include Ipad {
@@ -29,17 +29,6 @@
             padding-bottom: 48px;
         }
     }
-    &-reservation {
-        padding-top: 64px;
-        padding-bottom: 104px;
-        @include Ipad {
-            padding-bottom: 80px;
-        }
-        @include X-mobile {
-            padding-top: 48px;
-            padding-bottom: 88px;
-        }
-    }
     &-contact {
         padding-top: 64px;
         padding-bottom: 110px;
@@ -60,6 +49,16 @@
         @include X-mobile {
             padding-right: 15px;
             padding-left: 15px;
+        }
+    }
+    &-courses {
+        padding-top: 40px;
+        padding-bottom: 64px;
+        @include Ipad {
+            padding-bottom: 48px;
+        }
+        @include X-mobile {
+            padding-top: 32px;
         }
     }
 }

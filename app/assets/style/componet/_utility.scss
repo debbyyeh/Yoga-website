@@ -106,11 +106,20 @@ footer {
 .border-s {
     border-radius: 4.8px;
 }
+.tag {
+    width: 80px;
+    top: -8%;
+    left: 5%;
+    transform: translate(8%, 5%);
+}
 .w-150 {
     width: 150px;
 }
 .h-150 {
     height: 150px;
+}
+.h-196 {
+    height: 196px;
 }
 .h-207 {
     height: 207px;
@@ -172,15 +181,24 @@ footer {
     top: 120%;
     transform: translateY(-120%);
 }
-.form-group {
+.form-group,
+.input-group {
     input,
     select {
         border-radius: 4px;
         border: 1px solid $secondary;
         padding: 6px 12px;
+        color: #907a7b;
     }
+}
+.form-group {
     ::-webkit-input-placeholder {
         color: $secondary;
+    }
+}
+.input-group {
+    ::-webkit-input-placeholder {
+        color: $info;
     }
 }
 .form-group-info {
