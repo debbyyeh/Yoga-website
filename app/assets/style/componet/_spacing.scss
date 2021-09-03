@@ -61,4 +61,15 @@
             padding-top: 32px;
         }
     }
+    &-environment {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        @include Ipad {
+            padding-bottom: 40px;
+        }
+        @include X-mobile {
+            padding-top: 48px;
+            padding-bottom: 40px;
+        }
+    }
 }

@@ -139,6 +139,10 @@ footer {
 .h-628 {
     height: 628px;
 }
+.circle {
+    width: 96px;
+    height: 96px;
+}
 .l-94 {
     width: 94px;
     height: 94px;
@@ -169,6 +173,11 @@ footer {
     @include Ipad {
         display: none;
     }
+}
+.position-center {
+    left: 25%;
+    top: 0%;
+    transform: translateX(-25%);
 }
 .position-50 {
     position: absolute;
