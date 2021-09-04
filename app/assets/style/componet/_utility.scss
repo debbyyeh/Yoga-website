@@ -106,12 +106,6 @@ footer {
 .border-s {
     border-radius: 4.8px;
 }
-.tag {
-    width: 80px;
-    top: -8%;
-    left: 5%;
-    transform: translate(8%, 5%);
-}
 .w-150 {
     width: 150px;
 }
@@ -156,7 +150,15 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.pb-113 {
+    padding-bottom: 113px;
+    @include Ipad {
+        padding-bottom: 80px;
+    }
+    @include X-mobile {
+        padding-bottom: 80px;
+    }
+}
 .fluid-md {
     @include Ipad {
         padding-right: 0;

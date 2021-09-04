@@ -289,12 +289,7 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // Define the edge positioning anchors of the position utilities.
 
 // scss-docs-start position-map
-$position-values: (
-  0: 0,
-  30: 30%,
-  50: 50%,
-  100: 100%,
-) !default;
+$position-values: (-8: -8%, 0: 0, 10: 10%, 30: 30%, 50: 50%, 100: 100%) !default;
 // scss-docs-end position-map
 
 // Body
@@ -458,6 +453,7 @@ $font-size-lg: $font-size-base * 1.25 !default;
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
 $font-weight-bold: 700 !default;
 $font-weight-bolder: bolder !default;
 
