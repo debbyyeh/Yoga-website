@@ -12,7 +12,7 @@ body {
         color: #907a7b;
     }
     a {
-        display: inline-block;
+        display: block;
         text-decoration: none;
         color: $info;
         transition: all 0.8s;
@@ -29,6 +29,9 @@ body {
     }
     .form-content {
         color: $success;
+    }
+    label {
+        cursor: pointer;
     }
     input {
         outline: none;

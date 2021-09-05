@@ -72,4 +72,16 @@
             padding-bottom: 40px;
         }
     }
+    &-recommendClass {
+        padding-top: 40px;
+        padding-bottom: 56px;
+        @include Ipad {
+            padding-top: 32px;
+            padding-bottom: 52px;
+        }
+        @include X-mobile {
+            padding-top: 40px;
+            padding-bottom: 48px;
+        }
+    }
 }

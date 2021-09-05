@@ -1,13 +1,3 @@
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    height: calc((100% - 30px) / 2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .card-border {
     background-color: $white;
     border-radius: 16px;
@@ -102,6 +92,8 @@ footer {
 .border-top-radius {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     @media (max-width: 992px) {
         border-top-right-radius: 0px;
         border-bottom-left-radius: 16px;
@@ -114,8 +106,8 @@ footer {
 .border-s {
     border-radius: 4.8px;
 }
-.w-150 {
-    width: 150px;
+.w-30 {
+    width: 30%;
 }
 .h-150 {
     height: 150px;
@@ -123,17 +115,25 @@ footer {
 .h-196 {
     height: 196px;
 }
-.h-218 {
-    height: 218px;
+.h-half {
     @include Ipad {
-        height: 130px;
+        height: 46%;
     }
     @include X-mobile {
-        height: 173px;
+        height: 100%;
     }
 }
 .h-300 {
     height: 300px;
+}
+.h-350 {
+    height: 350px;
+    @include Ipad {
+        height: 216px;
+    }
+    @include X-mobile {
+        height: 350px;
+    }
 }
 .h-420 {
     height: 420px;
@@ -258,6 +258,9 @@ footer {
         border: 1px solid $secondary;
         padding: 6px 12px;
         color: #907a7b;
+        @include X-mobile {
+            padding: 6px;
+        }
     }
 }
 .form-group {
@@ -275,11 +278,53 @@ footer {
         color: $secondary;
     }
 }
-.radio-sex {
+.check-button {
+    input {
+        display: none;
+    }
+    label {
+        padding-left: 20px;
+        position: relative;
+        white-space: nowrap;
+        &::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            border: 1px solid $secondary;
+            border-radius: 3px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+    input:checked ~ label {
+        &::before {
+            background-color: $secondary;
+        }
+        &::after {
+            content: "";
+            width: 16px;
+            height: 16px;
+            background-color: $secondary;
+            background-image: url(../images/done_white_24dp.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.radio-button {
     input {
         display: none;
     }
     input:checked ~ label {
+        &::before {
+            background-color: $secondary;
+        }
         &::after {
             content: "";
             width: 5px;
@@ -288,12 +333,9 @@ footer {
             border-radius: 50%;
             background-color: #fff;
             position: absolute;
-            left: 5px;
+            left: 20%;
             top: 50%;
-            transform: translateY(-50%);
-        }
-        &::before {
-            background-color: $secondary;
+            transform: translate(-20%, -50%);
         }
     }
     label {
@@ -312,6 +354,7 @@ footer {
         }
     }
 }
+// index 的swiper
 .comment {
     .card-border {
         width: 30%;
@@ -325,11 +368,11 @@ footer {
         .card-border {
             width: 100%;
         }
-        .comment-content {
-            width: 50%;
-        }
         .comment-content:first-child {
             margin-right: 30px;
+        }
+        .comment-content {
+            width: 570px;
         }
     }
 }
