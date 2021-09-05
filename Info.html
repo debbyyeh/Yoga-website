@@ -75,19 +75,17 @@
   <div class="info container layout-OrderStep">
     <h3 class="text-center title-x mb-4">立即預約</h3>
     <div class="row mb-10 text-center">
-        <div class="mx-auto col-md-6 col-12">
-            <div class="row">
-                <div class="col-4 bg-primary border-l">
-                    <p class="text-info py-3">選擇方案</p>
-                </div>
-                <div class="col-4 bg-info border-l">
-                    <p class="text-white py-3">填寫資料</p>
-                </div>
-                <div class="col-4 bg-primary border-l">
-                    <p class="text-info py-3">完成預約</p>
-                </div>
-            </div>
-        </div>
+        <ul class="col-md-6 d-flex justify-content-center mx-auto">
+            <li class="w-30 bg-primary border-l">
+                <p class="text-info py-3">選擇方案</p>
+            </li>
+            <li class="w-30 bg-info border-l mx-md-9 mx-2">
+                <p class="text-white py-3">填寫資料</p>
+            </li>
+            <li class="w-30 bg-primary border-l">
+                <p class="text-info py-3">完成預約</p>
+            </li>
+        </ul>
     </div>
     <div class="d-flex align-items-center justify-content-center mb-10">
         <p class="text-success me-4">您選擇的是</p>
@@ -99,11 +97,11 @@
                 <div class="form-group mb-10 text-success">
                     <p class="mb-4">1. 是否接觸過瑜珈?</p>
                     <div class="form-input d-flex align-items-center">
-                        <div class="radio-sex">
+                        <div class="radio-button me-10">
                             <input type="radio" name="sex" id="Yes">
                             <label for="Yes">是</label>
                         </div>
-                        <div class="radio-sex">
+                        <div class="radio-button">
                             <input type="radio" name="sex" id="No">
                             <label for="No">否</label>
                         </div>
@@ -112,29 +110,29 @@
                 <div class="form-group mb-10 text-success">
                     <p class="mb-4">2. 想改善的生活問題?</p>
                     <div class="form-content d-flex mb-4">
-                        <div class="me-md-4 me-3">
+                        <div class="check-button me-4">
                             <input type="checkbox" name="reason" id="肌耐力不足">
                             <label for="肌耐力不足">肌耐力不足</label>
                         </div>
-                        <div class="me-md-4 me-3">
+                        <div class="check-button me-4">
                             <input type="checkbox" name="reason" id="柔軟度不佳">
                             <label for="柔軟度不佳">柔軟度不佳</label>
                         </div>
-                        <div>
+                        <div class="check-button">
                             <input type="checkbox" name="reason" id="壓力大">
                             <label for="壓力大">壓力大</label>
                         </div>
                     </div>
                     <div class="form-content d-flex">
-                        <div class="me-md-4 me-3">
+                        <div class="check-button me-sm-4 me-2">
                             <input type="checkbox" name="reason" id="姿勢不正">
                             <label for="姿勢不正">姿勢不正</label>
                         </div>
-                        <div class="me-md-4 me-3">
+                        <div class="check-button me-sm-4 me-2">
                             <input type="checkbox" name="reason" id="睡眠品質差">
                             <label for="睡眠品質差">睡眠品質差</label>
                         </div>
-                        <div>
+                        <div class="check-button">
                             <input type="checkbox" name="reason" id="注意力不足">
                             <label for="注意力不足">注意力不足</label>
                         </div>
@@ -143,23 +141,23 @@
                 <div class="form-group mb-10 text-success">
                     <p class="mb-4">3. 每週累積運動量約為多少？</p>
                     <div class="form-content d-flex align-items-center">
-                        <div>
+                        <div class="radio-button">
                             <input type="radio" name="duration" id="150mins">
                             <label for="150mins">150 分鐘以上</label>
                         </div>
-                        <div class="ms-10">
+                        <div class="radio-button ms-10">
                             <input type="radio" name="duration" id="75-150mins">
-                            <label label="75-150mins">75~150 分鐘</label>
+                            <label for="75-150mins">75~150 分鐘</label>
                         </div>
                     </div>
                     <div class="form-content d-flex align-items-center">
-                        <div>
+                        <div class="radio-button">
                             <input type="radio" name="duration" id="30-75mins">
                             <label for="30-75mins">30~75 分鐘</label>
                         </div>
-                        <div class="ms-10">
+                        <div class="radio-button ms-10">
                             <input type="radio" name="duration" id="below30mins">
-                            <label label="below30mins">30 分鐘以下</label>
+                            <label for="below30mins">30 分鐘以下</label>
                         </div>
                     </div>
                 </div>

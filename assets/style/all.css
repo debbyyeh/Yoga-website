@@ -15774,7 +15774,7 @@ body h3, body .h3 {
 }
 
 body a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: #907a7b;
   -webkit-transition: all 0.8s;
@@ -15800,24 +15800,12 @@ body .form-content {
   color: #707070;
 }
 
-body input {
-  outline: none;
+body label {
+  cursor: pointer;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  height: calc((100% - 30px) / 2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body input {
+  outline: none;
 }
 
 .card-border {
@@ -15929,6 +15917,8 @@ footer h1 a, footer .h1 a {
 .border-top-radius {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 @media (max-width: 992px) {
@@ -15949,8 +15939,8 @@ footer h1 a, footer .h1 a {
   border-radius: 4.8px;
 }
 
-.w-150 {
-  width: 150px;
+.w-30 {
+  width: 30%;
 }
 
 .h-150 {
@@ -15961,24 +15951,36 @@ footer h1 a, footer .h1 a {
   height: 196px;
 }
 
-.h-218 {
-  height: 218px;
-}
-
 @media (max-width: 992px) {
-  .h-218 {
-    height: 130px;
+  .h-half {
+    height: 46%;
   }
 }
 
 @media (max-width: 767px) {
-  .h-218 {
-    height: 173px;
+  .h-half {
+    height: 100%;
   }
 }
 
 .h-300 {
   height: 300px;
+}
+
+.h-350 {
+  height: 350px;
+}
+
+@media (max-width: 992px) {
+  .h-350 {
+    height: 216px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h-350 {
+    height: 350px;
+  }
 }
 
 .h-420 {
@@ -16147,6 +16149,15 @@ footer h1 a, footer .h1 a {
   color: #907a7b;
 }
 
+@media (max-width: 767px) {
+  .form-group input,
+  .form-group select,
+  .input-group input,
+  .input-group select {
+    padding: 6px;
+  }
+}
+
 .form-group ::-webkit-input-placeholder {
   color: #c0a4a5;
 }
@@ -16159,11 +16170,59 @@ footer h1 a, footer .h1 a {
   color: #c0a4a5;
 }
 
-.radio-sex input {
+.check-button input {
   display: none;
 }
 
-.radio-sex input:checked ~ label::after {
+.check-button label {
+  padding-left: 20px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.check-button label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #c0a4a5;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.check-button input:checked ~ label::before {
+  background-color: #c0a4a5;
+}
+
+.check-button input:checked ~ label::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #c0a4a5;
+  background-image: url(../images/done_white_24dp.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.radio-button input {
+  display: none;
+}
+
+.radio-button input:checked ~ label::before {
+  background-color: #c0a4a5;
+}
+
+.radio-button input:checked ~ label::after {
   content: "";
   width: 5px;
   height: 5px;
@@ -16171,23 +16230,19 @@ footer h1 a, footer .h1 a {
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
-  left: 5px;
+  left: 20%;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(-20%, -50%);
+      -ms-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
 }
 
-.radio-sex input:checked ~ label::before {
-  background-color: #c0a4a5;
-}
-
-.radio-sex label {
+.radio-button label {
   position: relative;
   padding-left: 20px;
 }
 
-.radio-sex label::before {
+.radio-button label::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -16215,11 +16270,11 @@ footer h1 a, footer .h1 a {
   .comment .card-border {
     width: 100%;
   }
-  .comment .comment-content {
-    width: 50%;
-  }
   .comment .comment-content:first-child {
     margin-right: 30px;
+  }
+  .comment .comment-content {
+    width: 570px;
   }
 }
 
@@ -16454,6 +16509,25 @@ footer h1 a, footer .h1 a {
   .layout-environment {
     padding-top: 48px;
     padding-bottom: 40px;
+  }
+}
+
+.layout-recommendClass {
+  padding-top: 40px;
+  padding-bottom: 56px;
+}
+
+@media (max-width: 992px) {
+  .layout-recommendClass {
+    padding-top: 32px;
+    padding-bottom: 52px;
+  }
+}
+
+@media (max-width: 767px) {
+  .layout-recommendClass {
+    padding-top: 40px;
+    padding-bottom: 48px;
   }
 }
 
