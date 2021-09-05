@@ -15,6 +15,9 @@
 .object-cover {
     object-fit: cover;
 }
+.z-index {
+    z-index: 3;
+}
 header {
     h1 {
         a {
@@ -115,11 +118,26 @@ footer {
 .h-196 {
     height: 196px;
 }
-.h-207 {
-    height: 207px;
+.h-218 {
+    height: 218px;
+    @include Ipad {
+        height: 130px;
+    }
+    @include X-mobile {
+        height: 173px;
+    }
 }
 .h-300 {
     height: 300px;
+}
+.h-420 {
+    height: 420px;
+    @include Ipad {
+        height: 252px;
+    }
+    @include X-mobile {
+        height: 420px;
+    }
 }
 .h-444 {
     height: 444px;
@@ -140,10 +158,18 @@ footer {
 .l-94 {
     width: 94px;
     height: 94px;
+    @include X-mobile {
+        width: 48px;
+        height: 48px;
+    }
 }
 .l-68 {
     width: 68px;
     height: 68px;
+    @include X-mobile {
+        width: 48px;
+        height: 48px;
+    }
 }
 .bg-fluid {
     background-position: center bottom;
@@ -175,6 +201,33 @@ footer {
     @include Ipad {
         display: none;
     }
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 100%;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 .position-center {
     left: 25%;
