@@ -15777,6 +15777,9 @@ body a {
   display: inline-block;
   text-decoration: none;
   color: #907a7b;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 body a:hover {
@@ -16149,50 +16152,68 @@ footer h1 a, footer .h1 a {
   color: #c0a4a5;
 }
 
-.radio-sex {
-  display: inline-block;
-  position: relative;
-  margin-right: 32px;
-}
-
 .radio-sex input {
-  vertical-align: middle;
-  margin-top: -2px;
-  margin-bottom: 1px;
-  width: 16px;
-  height: 16px;
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  opacity: 0;
+  display: none;
 }
 
-.radio-sex label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #c0a4a5;
-  border-radius: 50%;
-}
-
-.radio-sex input :checked + label {
-  background-color: #c0a4a5;
-}
-
-.radio-sex input :checked + label ::after {
+.radio-sex input:checked ~ label::after {
   content: "";
-  position: absolute;
   width: 5px;
   height: 5px;
-  left: 8px;
-  top: 2px;
   border: 1px solid #c0a4a5;
   border-radius: 50%;
   background-color: #fff;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.radio-sex input:checked ~ label::before {
+  background-color: #c0a4a5;
+}
+
+.radio-sex label {
+  position: relative;
+  padding-left: 20px;
+}
+
+.radio-sex label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #c0a4a5;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.comment .card-border {
+  width: 30%;
+}
+
+@media (max-width: 992px) {
+  .comment .comment-wrapper {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .comment .card-border {
+    width: 100%;
+  }
+  .comment .comment-content {
+    width: 50%;
+  }
+  .comment .comment-content:first-child {
+    margin-right: 30px;
+  }
 }
 
 .hover-bg:hover {
