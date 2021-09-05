@@ -15827,6 +15827,10 @@ body input {
      object-fit: cover;
 }
 
+.z-index {
+  z-index: 3;
+}
+
 header h1 a, header .h1 a {
   background-repeat: no-repeat;
   background-position: center center;
@@ -15947,12 +15951,40 @@ footer h1 a, footer .h1 a {
   height: 196px;
 }
 
-.h-207 {
-  height: 207px;
+.h-218 {
+  height: 218px;
+}
+
+@media (max-width: 992px) {
+  .h-218 {
+    height: 130px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h-218 {
+    height: 173px;
+  }
 }
 
 .h-300 {
   height: 300px;
+}
+
+.h-420 {
+  height: 420px;
+}
+
+@media (max-width: 992px) {
+  .h-420 {
+    height: 252px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h-420 {
+    height: 420px;
+  }
 }
 
 .h-444 {
@@ -15981,9 +16013,23 @@ footer h1 a, footer .h1 a {
   height: 94px;
 }
 
+@media (max-width: 767px) {
+  .l-94 {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 .l-68 {
   width: 68px;
   height: 68px;
+}
+
+@media (max-width: 767px) {
+  .l-68 {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .bg-fluid {
@@ -16030,6 +16076,30 @@ footer h1 a, footer .h1 a {
   .sticky-bar {
     display: none;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 100%;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .position-center {
@@ -16167,6 +16237,14 @@ footer h1 a, footer .h1 a {
 .courses_level:hover span,
 .courses_level.active span {
   opacity: 1;
+}
+
+.scale {
+  -webkit-transition: width 1.2s;
+  -o-transition: width 1.2s;
+  transition: width 1.2s;
+  z-index: 3;
+  margin-left: -100px;
 }
 
 .header-show {
