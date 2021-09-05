@@ -15830,8 +15830,15 @@ body input {
      object-fit: cover;
 }
 
-.z-index {
-  z-index: 3;
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 992px) {
+  .margin-negative {
+    margin-left: -120px;
+  }
 }
 
 header h1 a, header .h1 a {
@@ -15980,7 +15987,7 @@ footer h1 a, footer .h1 a {
 
 @media (max-width: 992px) {
   .h-420 {
-    height: 252px;
+    height: 300px;
   }
 }
 
@@ -16235,6 +16242,7 @@ footer h1 a, footer .h1 a {
 .header-show li a {
   color: #907a7b;
   padding: 16px 0px;
+  width: 100%;
 }
 
 .header-show li a:hover {
@@ -16258,14 +16266,6 @@ footer h1 a, footer .h1 a {
 .courses_level:hover span,
 .courses_level.active span {
   opacity: 1;
-}
-
-.scale {
-  -webkit-transition: width 1.2s;
-  -o-transition: width 1.2s;
-  transition: width 1.2s;
-  z-index: 3;
-  margin-left: -100px;
 }
 
 .header-show {
