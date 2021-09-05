@@ -271,42 +271,61 @@ footer {
     }
 }
 .radio-sex {
-    display: inline-block;
-    position: relative;
-    margin-right: 32px;
     input {
-        vertical-align: middle;
-        margin-top: -2px;
-        margin-bottom: 1px;
-        width: 16px;
-        height: 16px;
-        outline: none;
-        appearance: none;
-        opacity: 0;
+        display: none;
+    }
+    input:checked ~ label {
+        &::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border: 1px solid $secondary;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::before {
+            background-color: $secondary;
+        }
     }
     label {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: -1;
-        width: 16px;
-        height: 16px;
-        border: 1px solid $secondary;
-        border-radius: 50%;
+        position: relative;
+        padding-left: 20px;
+        &::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            border: 1px solid $secondary;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }
-.radio-sex input :checked + label {
-    background-color: $secondary;
-    ::after {
-        content: "";
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        left: 8px;
-        top: 2px;
-        border: 1px solid $secondary;
-        border-radius: 50%;
-        background-color: #fff;
+.comment {
+    .card-border {
+        width: 30%;
+    }
+    @include Ipad {
+        .comment-wrapper {
+            width: 1140px;
+        }
+    }
+    @include X-mobile {
+        .card-border {
+            width: 100%;
+        }
+        .comment-content {
+            width: 50%;
+        }
+        .comment-content:first-child {
+            margin-right: 30px;
+        }
     }
 }
 // <i class="fab fa-facebook"></i>

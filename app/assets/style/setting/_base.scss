@@ -15,7 +15,7 @@ body {
         display: inline-block;
         text-decoration: none;
         color: $info;
-        // transition: all 0.8s;
+        transition: all 0.8s;
         &:hover {
             filter: brightness(80%);
         }
