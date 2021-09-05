@@ -15,8 +15,13 @@
 .object-cover {
     object-fit: cover;
 }
-.z-index {
-    z-index: 3;
+.object-contain {
+    object-fit: contain;
+}
+.margin-negative {
+    @media (min-width: 992px) {
+        margin-left: -120px;
+    }
 }
 header {
     h1 {
@@ -133,7 +138,7 @@ footer {
 .h-420 {
     height: 420px;
     @include Ipad {
-        height: 252px;
+        height: 300px;
     }
     @include X-mobile {
         height: 420px;

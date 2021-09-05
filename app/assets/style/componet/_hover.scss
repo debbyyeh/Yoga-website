@@ -16,6 +16,7 @@
         a {
             color: $info;
             padding: 16px 0px;
+            width: 100%;
             &:hover {
                 color: $success;
             }
@@ -35,15 +36,4 @@
     span {
         opacity: 1;
     }
-}
-
-.scale {
-    transition: width 1.2s;
-    z-index: 3;
-    margin-left: -100px;
-    // .card-border {
-    //     &:hover {
-    //         width: 120%;
-    //     }
-    // }
 }
