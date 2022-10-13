@@ -1,0 +1,65 @@
+.header-show {
+  max-height: 0;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-transition: max-height 1.1s;
+  transition: max-height 1.1s;
+  z-index: 999;
+}
+
+.header-height-show .header-show {
+  max-height: 100vh;
+}
+
+.reservation-show {
+  max-height: 0;
+  overflow: hidden;
+  right: 0;
+  left: 0;
+  -webkit-transition: max-height 1.1s;
+  transition: max-height 1.1s;
+}
+
+.reservation-height-show .reservation-show {
+  max-height: 1500px;
+}
+
+.level-show-1,
+.level-show-2,
+.level-show-3 {
+  max-height: 0;
+  overflow: hidden;
+  right: 0;
+  left: 0;
+  -webkit-transition: max-height 1.1s;
+  transition: max-height 1.1s;
+}
+
+.level-height-show-1 .level-show-1 {
+  max-height: 500px;
+}
+
+.level-height-show-2 .level-show-2 {
+  max-height: 500px;
+}
+
+.level-height-show-3 .level-show-3 {
+  max-height: 500px;
+}
+
+.order-show {
+  max-height: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1.1s;
+  transition: max-height 1.1s;
+}
+
+.order-height-show .order-show {
+  max-height: 800px;
+}
